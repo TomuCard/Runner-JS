@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100hv;
+}
+
+.background {
+    background: url("/img/img3.png") repeat-x;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 3873px;
+    animation: moveRight 200s linear infinite;
+    z-index: -1;
+    zoom: 0.8;
+}
+
+@keyframes moveRight {
+    100% {
+        transform: translateX(-1953px);
+    }
+}
+
+#button {
+    background: #1E1E1E;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 87px;
+    color: #FFFFFF;
+    max-width: 20%;
+    justify-content: center;
+    position: absolute;
+    left: 2%;
+    bottom: 85%;
+    font-family: 'Mukta', sans-serif;
+    cursor: default;
+    width: 400px;
+    margin-left: 12.5%;
+    text-align: center;
+    z-index: 2;
+
+}
+
+button:hover {
+    background: #5C5C5C;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+#btn_maps {
+    background: #1E1E1E;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87px;
+    color: #FFFFFF;
+    max-width: 40%;
+    position: absolute;
+    left: 0%;
+    bottom: 55%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+}
+
+#btn_imported {
+
+    background: #1E1E1E;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87px;
+    color: #FFFFFF;
+    max-width: 40%;
+    position: absolute;
+    left: 0%;
+    bottom: 37%;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+}
+
+#btn_return {
+    background: #1E1E1E;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 87px;
+    color: #FFFFFF;
+    max-width: 40%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+}
+
+#mapslist {
+    position: fixed;
+    width: 50vw;
+    min-height: 100vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    background-color: black;
+    border-left: 1px solid #1E1E1E;
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    z-index: 1;
+}
+
+#mapslist.active {
+    transform: translate(0);
+}
+
+#mapslist a {
+    font-family: Quicksand, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.ButtonMap {
+    width: 250px;
+    font-size: 30px;
+
+}
